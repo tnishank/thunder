@@ -1,0 +1,23 @@
+ <html>
+	<head>
+		<title>Registration</title>
+	</head>
+	<body>
+		<form role="form" class="form-horizontal" action="/register/" method="post" >{% csrf_token %}
+			<!-- <input type='hidden' name='csrfmiddlewaretoken' value='/' /> -->
+			<div>
+				<label>Email</label>
+				<input type="text" placeholder="Enter your email" name="email" id="email">
+			</div>
+			<div style="margin-top:20px;">
+				<label>Username</label>
+				<input type="text" placeholder="Enter your username" name="username" id="username">
+			</div>
+			<div style="margin-top:20px;">
+				<label>Password</label>
+				<input type="text" placeholder="Enter Password" name="password" id="password">
+			</div>
+			<button type="submit" style="margin-top:20px;">Submit</button>
+		</form>
+	</body>
+</html>
